@@ -36,7 +36,7 @@ function addChannel() {
   const channelName = document.getElementById("channel-input").value.trim();
   if (channelName) {
     addStream(channelName);
-    document.getElementById("channel-input").value = ";";
+    document.getElementById("channel-input").value = "";
   }
 }
 
