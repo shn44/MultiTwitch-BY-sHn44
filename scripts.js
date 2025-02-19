@@ -1,4 +1,4 @@
-const parentDomain = "127.0.0.1";
+const parentDomain = "https://shn44.github.io/";
 
 const themeToggle = document.getElementById("theme-toggle");
 const body = document.body;
