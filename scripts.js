@@ -22,13 +22,23 @@ themeToggle.addEventListener("click", () => {
   }
 });
 
-document.getElementById("add-channel").addEventListener("click", function () {
+document.getElementById("add-channel").addEventListener("click", addChannel);
+
+document
+  .getElementById("channel-input")
+  .addEventListener("keypress", function (e) {
+    if (e.key === "Enter") {
+      addChannel();
+    }
+  });
+
+function addChannel() {
   const channelName = document.getElementById("channel-input").value.trim();
   if (channelName) {
     addStream(channelName);
-    document.getElementById("channel-input").value = "";
+    document.getElementById("channel-input").value = ";";
   }
-});
+}
 
 function addStream(channelName) {
   const existingStreams = document.querySelectorAll(".stream iframe");
