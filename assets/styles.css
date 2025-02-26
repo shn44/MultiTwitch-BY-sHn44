@@ -70,8 +70,8 @@ h1 {
 }
 .streams-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+  gap: 10px;
   margin-top: 20px;
 }
 
@@ -173,7 +173,7 @@ h1 {
 }
 @media (max-width: 768px) {
   .streams-container {
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(48%, 1fr));
   }
   .controls {
     flex-direction: column;
@@ -196,17 +196,17 @@ h1 {
 }
 @media (min-width: 1024px) {
   .streams-container {
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(48%, 1fr));
   }
 }
 
 @media (min-width: 1440px) {
   .streams-container {
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(48%, 1fr));
   }
 }
 @media (min-width: 1920px) {
   .streams-container {
-    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(48%, 1fr));
   }
 }
